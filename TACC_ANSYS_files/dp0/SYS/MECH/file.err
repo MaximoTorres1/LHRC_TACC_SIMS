@@ -1,0 +1,21 @@
+/COM,ANSYS RELEASE 2021 R1           BUILD 21.1      UP20201109       14:08:26
+
+ *** WARNING ***                         CP =       0.000   TIME= 14:08:26
+ The requested number of shared-memory processors (32) exceeds the       
+ number of physical processors that are available (6).  As the use of    
+ virtual processors is not recommended, the number of processors used    
+ will be 6.                                                              
+
+ *** WARNING ***                         CP =       0.094   TIME= 14:08:35
+ The requested number of shared-memory processors (32) cannot be greater 
+ than that specified by the ANSYS command line option -NP (6).           
+  The number of processors used will be left at 6.                       
+
+ *** WARNING ***                         CP =       1.328   TIME= 14:08:36
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       1.656   TIME= 14:08:36
+ Material number 2 (used by element 23337) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
