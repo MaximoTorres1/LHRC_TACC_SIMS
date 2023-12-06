@@ -1,0 +1,18 @@
+# encoding: utf-8
+# 2021 R1
+SetScriptVersion(Version="21.1.216")
+system1 = GetSystem(Name="SYS")
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+system2 = GetSystem(Name="Geom")
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometry1.UpdateCAD()
+geometryComponent1 = system2.GetComponent(Name="Geometry")
+geometryComponent1.Update(AllDependencies=True)
+geometry1.UpdateCAD()
+geometry1.UpdateCAD()
+geometry1.SetFile(FilePath=GetAbsoluteUserPathName("24 CA FEA/24-DYN-SUS-CTRL-ASSY.STEP"))
+geometry1.UpdateCAD()
+Save(Overwrite=True)
